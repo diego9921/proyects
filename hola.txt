@@ -1,0 +1,54 @@
+Microsoft Windows [Versión 6.3.9600]
+(c) 2013 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\usuario.pc>cd Desktop
+
+C:\Users\usuario.pc\Desktop>cd hola
+
+C:\Users\usuario.pc\Desktop\hola>git init
+Initialized empty Git repository in C:/Users/usuario.pc/Desktop/hola/.git/
+
+C:\Users\usuario.pc\Desktop\hola>git remote add origin https://github.com/diego9
+921/proyects.git
+
+C:\Users\usuario.pc\Desktop\hola>git commit -m "hola"
+On branch master
+
+Initial commit
+
+Untracked files:
+        hola.txt
+
+nothing added to commit but untracked files present
+
+C:\Users\usuario.pc\Desktop\hola>git push origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/diego9921/proyects.git'
+
+C:\Users\usuario.pc\Desktop\hola>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        hola.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\usuario.pc\Desktop\hola>git add .
+
+C:\Users\usuario.pc\Desktop\hola>git commit -m "hola"
+[master (root-commit) 5e80b2d] hola
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hola.txt
+
+C:\Users\usuario.pc\Desktop\hola>git push origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 203 bytes | 203.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/diego9921/proyects.git
+ * [new branch]      master -> master
+
+C:\Users\usuario.pc\Desktop\hola>
